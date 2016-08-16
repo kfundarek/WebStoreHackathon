@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Web Store">
+    <meta name="author" content="Dan Burke and Kevin Fundarek">
+    <title>RP WebStore</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+    <!-- Fixed navbar -->
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">RP WebStore</a>
+        </div>
+        <div class="row">
+
+
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="index.html">Home</a></li>       
+            <li><a href="#about">About</a></li>
+            <li><a href="#cart">Cart</a></li>          
+            <li><a href="#contact" data-toggle="modal">Contact</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+      </div>
+    </div>
+<br><br><br>    
+    <div class="container">
+      <div class="search-bar">
+        <div class="col-lg-6">
+          <div class="input-group">
+          <input type="text" class="form-control" placeholder="Search for...">
+          <span class="input-group-btn">
+            <button class="btn btn-default" type="button">Search</button>
+          </span>
+        </div><!-- /input-group -->
+      </div><!-- /.col-lg-6 -->
+    </div><!-- /.row -->
+
+    <div class="container">
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+      </ol>
+     
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="http://placehold.it/1200x315" alt="...">
+          <div class="carousel-caption">
+              <h3>Caption Text</h3>
+          </div>
+        </div>
+        <div class="item">
+          <img src="http://placehold.it/1200x315" alt="...">
+          <div class="carousel-caption">
+              <h3>Caption Text</h3>
+          </div>
+        </div>
+        <div class="item">
+          <img src="http://placehold.it/1200x315" alt="...">
+          <div class="carousel-caption">
+              <h3>Caption Text</h3>
+          </div>
+        </div>
+      </div>
+     
+      <!-- Controls -->
+      <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+      </a>
+      <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+      </a>
+    </div> <!-- Carousel -->  
+  <div class="container">
+    <div class="product" id="product_1"></div>
+  </div>      
+    <!-- Fixed footer -->
+    <div class="navbar navbar-inverse navbar-fixed-bottom" role="navigation">
+      <div class="container">
+        <div class="navbar-text pull-left">
+          <p>© 2016 RP WebStore</p>
+        </div>
+        <div class="navbar-text pull-right">
+          <a href="#"><i class="fa fa-facebook-square fa-2x"></i></a>
+          <a href="#"><i class="fa fa-twitter fa-2x"></i></a>
+          <a href="#"><i class="fa fa-google-plus fa-2x"></i></a>
+        </div>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="http://maps.google.com/maps/api/js?sensor=true" > </script>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" >
+
+
+
+//get information from file Products.JSON
+$get(Products.JSON, function(data){})
+//add product information to html document
+$('#product_1').html();
+
+//pull an ajax request that adds a title from the relavent JSON object
+
+//add the related picture below the title
+
+//add the selling points below the picture
+
+//add a "add to cart" button below/next to the item
+
+//add a listener so that the cart is updated when the button is pressed
+
+
+
+
+
+//create a cart that tracks the added items
+
+//make search bar functioning
+
+
+
+
+/*
+$.get( this.url, function(data){ //innitiate get request on this.url
+       console.log(this); // window console.log this post
+       thisPost.attributes = data; //creates key .attributes with a value of data in post
+       thisPost.render(); //invoke function render
+     });
+*/
+
+/************
+
+Web Store Hackathon
+
+Get excited people! Today is the day we finally MONETIZE! We will build either an e-commerce store for our community site or a new hot startup to compete with Amazon.com
+
+Please use the GitHub workflow to initialize a repository and save your progress after each step:
+
+$ git add .
+$ git commit -m "add music pages"
+$ git push origin master
+Turn in both the site hosted live on Github Pages and a link to your GitHub repository.
+
+To start, create an HTML document. Include jQuery and Bootstrap (or another css framework) if you'd like.
+Set up your HTML document such that there is a header, a nav bar, a content area, and a footer.
+Inside the content area create <div id="book1"> and <div id="book2"> and place information about a book (or any other item) for sale in each div. Each product should have the following properties: 
+name
+category
+price
+picture
+a list of selling points
+Give the outermost div an id of the book's name and a class based on its category as well as a general class of product. i.e <div id='twilight' class='book product'> Give the inner HTML elements the appropriate class to match the information they hold (i.e <div class="name">, <div class="category">, <div class="price">, etc)
+Add some css styles to make each section of the page stand out. Try to use as many different css selectors and css properties as you can.
+Now create a second identical page with two music albums (or any other category of item) for sale. Link the two pages together in the nav bar. So that the user can click back and forth between books and music.
+Now add some content to the header and footer. Notice that we had to do this same work in two different places. As the complexity of an application grows, having to keep information in sync like this isn't just tedious, it leads to big problems if we update information in one place but forget to update the other. The rule is Don't Repeat Yourself!
+Now, let's refactor this site to be a Single Page Application (i.e. We load all of the HTML, CSS, and JS once, and then dynamically change the page state using JS).
+
+First copy the HTML that shows the two albums into the content area on the books page so that we have books and music together.
+Now take all the information about our books and music and make them into JavaScript objects. Create variables book1, book2, album1, and album2. Set each equal to an object with keys name, category, and picture_url which hold string values, price which holds a number value, and selling_points which is an array of strings.
+You may also want to give your objects unique id properties such as book_1 to more easily generate id attributes for their divs on the page.
+Leaving the HTML tags intact, remove the text content (and image src) about each product from the HTML. Now use jQuery to add the information about each product back onto the page immediately upon page load. So:
+$('#book1 .name').text(book1.name);
+Refactor your code so that you can call a function add_to_page(book1), passing in an object, and that object will be placed using jQuery into the html page. Now you should just call add_to_page for each product and the add_to_page function will place it on the page for you.
+Refactor your code such that the content div is completely empty on page load, and addToPage constructs and appends new HTML elements into it. So:
+$('#content').append($('<div id=book1>').html( $('<div class=name>').text(book1.name)));
+Make sure each book or album's div has the appropriate class and id attributes generated for it. You should not have to change any css while refactoring.
+Now add click events to the nav bar such that when the user clicks books the books for sale are placed on the page in the <div id=content>, but the albums are removed and vice versa. Will you use $('#content').empty() before adding new content or just have two separate divs and .show() one and .hide() the other. Try both ways!
+Also have a "show all" button in the nav that shows all products for sale.
+Now refactor your code so that your products are no longer stored as seperate variables book1, book2, etc, but rather as an array of book objects and array of album objects that you iterate over with a for loop. Make sure your nav bar switching still works.
+At this point you should be able to add more books and albums to your arrays and not have to change a single line of code to have your page still work. Check to see if this is the case. If not, make it so.
+Now refactor your code such that you have only a single object called products with keys books and albums whose values are arrays of book and album objects respectively. Make sure your nav bar switching still works.
+Refactor the nav bar to use a dropdown menu instead of links. Use the .change() event listener and observe the selected value to know what products to display.
+Refactor your code such that you construct the dropdown menu from a for in loop through the properties of product. See if you can remove all hardcoded references to the words "books" and "albums" from your code. You will know you are successful if you can add a third category like electronics to the products object and not have to change a single line of code to have your page still work.
+Add a search box. Show only products whose names or features include that word. Hint:
+!!book_name.match(user_input);
+
+*************/
+    </script>
+  </body>
+</html>

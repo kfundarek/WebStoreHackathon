@@ -1,0 +1,16 @@
+[
+  {
+    name: "Ultra Slut Body Detergent",
+    category: "Dirty",
+    price: "$5.99",
+    picture: "src= 'https://s-media-cache-ak0.pinimg.com/236x/27/a8/5d/27a85d53a7aa13fd5ee21c5b8d4b8405.jpg'",
+    selling-points: ["get rid of the nastyiest oders", "good for hard to reach places", "dirt cheap"]
+  },
+  {
+    name: "Thongies: Super Mega Fierce Diapers",
+    category: "Dirty",
+    price: "14.99",
+    picture: "https://s-media-cache-ak0.pinimg.com/736x/54/ee/73/54ee73e58e59447896fc09825e62433f.jpg",
+    selling-points: ["less materials means less cost", "nice snug fit", "it's inevitable anyway"]
+  },
+]
